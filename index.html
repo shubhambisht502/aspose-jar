@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Teachmint</title>
+    <script>
+      // Try to open the app via intent
+      window.location = "intent://open_story/2#Intent;scheme=teachmint;package=com.teachmint.teachmint;end";
+
+      // Fallback to Play Store with referrer for deferred deep linking
+      setTimeout(() => {
+        window.location = "https://play.google.com/store/apps/details?id=com.teachmint.teachmint&referrer=utm_source%3Dcustom_shortlink%26utm_campaign%3Dopen_stories%26story_id%3D2";
+      }, 1500);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Teachmint...</p>
+  </body>
+</html>
